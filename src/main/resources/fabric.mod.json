@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "crexp",
+	"version": "${version}",
+	"name": "Creatively Expressed",
+	"description": "A mod providing utilities and Decoratives",
+	"authors": [
+		"DEV- ShiroJR"
+	],
+	"contact": {
+		"homepage": "https://github.com/JR1811",
+		"sources": "https://github.com/JR1811/crexp"
+	},
+	"license": "ARR",
+	"icon": "assets/crexp/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.shirojr.crexp.CreativelyExpressed"
+		],
+		"fabric-datagen": [
+			"net.shirojr.crexp.CreativelyExpressedDataGenerator"
+		]
+	},
+	"mixins": [
+		"crexp.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
